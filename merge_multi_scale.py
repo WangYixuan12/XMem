@@ -12,7 +12,7 @@ from progressbar import progressbar
 from multiprocessing import Pool
 from util import palette
 
-from util.palette import davis_palette, youtube_palette
+from XMem.util.palette import davis_palette, youtube_palette
 import shutil
 
 

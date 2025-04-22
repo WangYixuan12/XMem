@@ -16,14 +16,14 @@ from argparse import ArgumentParser
 
 import torch
 
-from model.network import XMem
-from inference.interact.s2m_controller import S2MController
-from inference.interact.fbrs_controller import FBRSController
-from inference.interact.s2m.s2m_network import deeplabv3plus_resnet50 as S2M
+from XMem.model.network import XMem
+from XMem.inference.interact.s2m_controller import S2MController
+from XMem.inference.interact.fbrs_controller import FBRSController
+from XMem.inference.interact.s2m.s2m_network import deeplabv3plus_resnet50 as S2M
 
 from PySide6.QtWidgets import QApplication
-from inference.interact.gui import App
-from inference.interact.resource_manager import ResourceManager
+from XMem.inference.interact.gui import App
+from XMem.inference.interact.resource_manager import ResourceManager
 from contextlib import nullcontext
 
 torch.set_grad_enabled(False)

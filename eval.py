@@ -9,10 +9,10 @@ from torch.utils.data import DataLoader
 import numpy as np
 from PIL import Image
 
-from inference.data.test_datasets import LongTestDataset, DAVISTestDataset, YouTubeVOSTestDataset
-from inference.data.mask_mapper import MaskMapper
-from model.network import XMem
-from inference.inference_core import InferenceCore
+from XMem.inference.data.test_datasets import LongTestDataset, DAVISTestDataset, YouTubeVOSTestDataset
+from XMem.inference.data.mask_mapper import MaskMapper
+from XMem.model.network import XMem
+from XMem.inference.inference_core import InferenceCore
 
 from progressbar import progressbar
 

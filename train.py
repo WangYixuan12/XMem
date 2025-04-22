@@ -9,13 +9,13 @@ import torch
 from torch.utils.data import DataLoader, ConcatDataset
 import torch.distributed as distributed
 
-from model.trainer import XMemTrainer
-from dataset.static_dataset import StaticTransformDataset
-from dataset.vos_dataset import VOSDataset
+from XMem.model.trainer import XMemTrainer
+from XMem.dataset.static_dataset import StaticTransformDataset
+from XMem.dataset.vos_dataset import VOSDataset
 
-from util.logger import TensorboardLogger
-from util.configuration import Configuration
-from util.load_subset import load_sub_davis, load_sub_yv
+from XMem.util.logger import TensorboardLogger
+from XMem.util.configuration import Configuration
+from XMem.util.load_subset import load_sub_davis, load_sub_yv
 
 
 """
